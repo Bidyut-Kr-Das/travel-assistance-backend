@@ -15,8 +15,12 @@ app.register_blueprint(cities,url_prefix='/api/v1')
 
 app.register_blueprint(location,url_prefix='/api/v1')
 
+@app.route('/')
+def hello_world():
+    return 'Hail hydra!'
+
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port=8080)
-
+    app.run(host="0.0.0.0",ssl_context=('cert.pem', 'key.pem'))
+    
 
