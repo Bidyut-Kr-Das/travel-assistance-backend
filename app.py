@@ -18,8 +18,8 @@ app.register_blueprint(location,url_prefix='/api/v1')
 @app.route('/')
 def accept_cert():
     # Set a cookie with Secure and SameSite=None attributes
-    response = make_response(redirect('https://dynamic-travel-assistant.vercel.app'))
-    response.set_cookie('sslAccepted', 'true', max_age=60*60*24*30, secure=True, samesite='None')
+    response = make_response(redirect('https://dynamic-travel-assistant.vercel.app/services'))
+    response.set_cookie('sslAccepted', 'true', max_age=60*60*24*10, secure=True, samesite='None')
     return response
 
 
