@@ -3,7 +3,7 @@ import json
 import google.generativeai as genai
 import os
 
-genai.configure(api_key="AIzaSyC1Lno7jxeVz-uEtpmbGl6VoP7cfVbWCc0")
+genai.configure(api_key="xxxx")
 
 chatbot = Blueprint('chatbot', __name__)
 
