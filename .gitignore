@@ -1,4 +1,4 @@
-venv
+**/.venv
 __pycache__
 *.pem
 *.key
@@ -6,3 +6,5 @@ __pycache__
 *.crt
 *.srl
 *.tar
+**/try
+
